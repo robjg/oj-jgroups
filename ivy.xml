@@ -1,0 +1,23 @@
+<ivy-module version="2.0">
+  <info organisation="uk.co.rgordon" module="oj-jgroups"/>
+
+	<configurations>
+        <conf name="default" visibility="public"></conf>
+        <conf name="compile" visibility="public"></conf>
+        <conf name="provided" visibility="public"></conf>
+        <conf name="test" visibility="public"></conf>
+	</configurations>  
+        
+	<dependencies>
+	
+	    <dependency org="uk.co.rgordon" name="oddjob" rev="1.4.0"
+	    	conf="provided->default" />
+	    	
+		<dependency org="org.jgroups" name="jgroups" rev="3.6.6.Final"
+			conf="provided->default"/>
+	    	
+		<dependency org="junit" name="junit" rev="4.12"
+			conf="test->default"/>
+			    	
+	</dependencies>	
+</ivy-module>
